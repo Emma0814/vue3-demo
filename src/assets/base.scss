@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+ol,
+ul,
+th,
+td,
+form,
+fieldset,
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  font-size: inherit;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+cite,
+em,
+s,
+i,
+b {
+  font-style: normal;
+}
+
+input,
+button,
+textarea,
+select {
+  font-size: 100%;
+}
+
+body,
+input,
+button,
+textarea,
+select,
+option {
+  font-size: normal;
+}
+
+a,
+input,
+textarea {
+  text-decoration: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li,
+img,
+label,
+input {
+  vertical-align: middle;
+}
+
+var {
+  font-style: normal;
+}
+
+ins {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-size: 0.2rem;
+  font-family: Arial, Verdana, Sans-serif;
+  transition: width 0.3s ease-in;
+}
+
+.viewport {
+  width: 100%;
+  max-width: 7.2rem;
+  margin: 0 auto;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.gDisabled {
+  filter: grayscale(1);
+  pointer-events: none;
+  cursor: default;
+}

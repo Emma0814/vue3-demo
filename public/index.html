@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>vue3 demo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="renderer" content="webkit" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+  <meta name="imagemode" content="force" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="favicon.ico" />
+  <script src="//res.wx.qq.com/open/js/jweixin-1.4.0.js?needValidHost=false"></script>
+</head>
+
+<body>
+  <script>
+    (function (win) {
+      var doc = win.document,
+        html = doc.documentElement
+      var baseWidth = 720,
+        grids = baseWidth / 100,
+        resizeEvt =
+        'orientationchange' in win ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = html.clientWidth || 320
+          if (clientWidth > 720) {
+            clientWidth = 720
+          }
+          html.style.fontSize = clientWidth / grids + 'px'
+        }
+      if (!doc.addEventListener) return
+      //提前把rem数值计算好
+      recalc()
+      win.addEventListener(resizeEvt, recalc, false)
+      doc.addEventListener(
+        'DOMContentLoaded',
+        function () {
+          setTimeout(recalc)
+        },
+        false
+      )
+    })(window)
+  </script>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+      properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
